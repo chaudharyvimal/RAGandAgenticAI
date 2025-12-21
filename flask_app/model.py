@@ -90,4 +90,4 @@ def get_ai_response(model, template, system_prompt, user_prompt):
 def gemini_response(system_prompt, user_prompt):
     return get_ai_response(model, gemini_template, system_prompt, user_prompt)
 
-# test code
+# test code1
