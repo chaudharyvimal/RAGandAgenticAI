@@ -1,0 +1,4 @@
+component 0,timestamp
+"[{""role"": ""user"", ""metadata"": null, ""content"": [{""text"": ""Hello"", ""type"": ""text""}], ""options"": null}, {""role"": ""assistant"", ""metadata"": null, ""content"": [{""text"": ""Ask me anything!"", ""type"": ""text""}], ""options"": null}]",2025-12-30 00:04:10.301309
+"[{""role"": ""user"", ""metadata"": null, ""content"": [{""text"": ""Am I cool?"", ""type"": ""text""}], ""options"": null}, {""role"": ""assistant"", ""metadata"": null, ""content"": [{""text"": ""Yes"", ""type"": ""text""}], ""options"": null}]",2025-12-30 00:04:10.322299
+"[{""role"": ""user"", ""metadata"": null, ""content"": [{""text"": ""Are tomatoes vegetables?"", ""type"": ""text""}], ""options"": null}, {""role"": ""assistant"", ""metadata"": null, ""content"": [{""text"": ""Yes"", ""type"": ""text""}], ""options"": null}]",2025-12-30 00:04:10.340696
