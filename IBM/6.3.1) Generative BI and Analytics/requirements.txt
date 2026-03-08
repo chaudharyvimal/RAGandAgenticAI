@@ -1,0 +1,14 @@
+# ibm-watsonx-ai==1.1.20 
+# image==1.5.33 
+# flask
+# requests==2.32.0
+dotenv
+# ibm-watsonx-ai==0.2.6
+# langchain-ibm==0.1.4
+# langchain==0.1.16
+langchain
+langchain-google-genai
+langchain-experimental
+# langchain-experimental==0.0.57
+matplotlib==3.8.4
+seaborn==0.13.2
