@@ -159,19 +159,22 @@ def create_gradio_interface(app):
                 gr.Markdown("### Example Images")
                 with gr.Row():
                     example1 = gr.Image(
-                        value="examples/casual_outfit.jpg",
+                        # value="examples/casual_outfit.jpg",
+                        value="examples/test-1.png",
                         label="Casual Outfit",
                         show_label=True,
                         elem_id="example1"
                     )
                     example2 = gr.Image(
-                        value="examples/formal_dress.jpg",
+                        # value="examples/formal_dress.jpg",
+                        value="examples/test-2.png",
                         label="Formal Dress",
                         show_label=True,
                         elem_id="example2"
                     )
                     example3 = gr.Image(
-                        value="examples/streetwear.jpg",
+                        # value="examples/streetwear.jpg",
+                        value="examples/test-3.png",
                         label="Streetwear",
                         show_label=True,
                         elem_id="example3"
@@ -222,6 +225,22 @@ def create_gradio_interface(app):
             inputs=[example3],
             outputs=[image_input]
         )
+        # # Connect example images to the image input
+        # example1.click(
+        #     fn=lambda x: x,
+        #     inputs=[example1],
+        #     outputs=[image_input]
+        # )
+        # example2.click(
+        #     fn=lambda x: x,
+        #     inputs=[example2],
+        #     outputs=[image_input]
+        # )
+        # example3.click(
+        #     fn=lambda x: x,
+        #     inputs=[example3],
+        #     outputs=[image_input]
+        # )
         
         # Connect the button to the process_image function
         submit_btn.click(
@@ -248,7 +267,8 @@ def create_gradio_interface(app):
 if __name__ == "__main__":
     try:
         # Initialize the app with the dataset
-        app = StyleFinderApp("swift-style-embeddings.pkl")
+        # app = StyleFinderApp("swift-style-embeddings.pkl")
+        app = StyleFinderApp("./swift-style-embeddings.pkl")
         
         # Create the Gradio interface
         demo = create_gradio_interface(app)
@@ -256,8 +276,10 @@ if __name__ == "__main__":
         # Launch the Gradio interface
         demo.launch(
             server_name="127.0.0.1",  
-            server_port=5000,
-            share=True  # Set to False if you don't want to create a public link
+            # server_port=5000,
+            # share=True  # Set to False if you don't want to create a public link
+            server_port=7860,
+            share=False  # Set to False if you don't want to create a public link
         )
     except Exception as e:
         print(f"Error starting the application: {str(e)}")

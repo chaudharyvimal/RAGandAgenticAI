@@ -11,3 +11,6 @@ scikit-learn==1.5.2
 gradio==5.22.0
 pandas
 numpy
+dotenv
+langchain
+langchain-google-genai
